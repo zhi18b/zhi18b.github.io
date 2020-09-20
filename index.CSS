@@ -24,7 +24,7 @@
  * This changes the colour of the website to blue
 */
 body {
-  background-color:blue;
+  background-color:black;
 }
 /**
  * This bit of code is how I was able to hide some of the raw code.
@@ -36,7 +36,7 @@ body {
  * This makes the tab which you are currently more obvious and less difficult to guess what tab you are on.
  */
 .tabs input[type="radio"]:checked + label {
-	background: #fff;
+	background: blue;
 }
 /**
  * without this all of the text inside the tabs aren't visible.
@@ -53,7 +53,7 @@ body {
 	width: 100%;
 	display: none;
   padding: 1rem;
-  background: #fff;
+  background:white;
 }
 /**
  * This helps the sizing of the tabs and also the order of them.
