@@ -49,8 +49,23 @@ Samsung Galaxy S10e. The best premium cheap phone </p>
  * This changes the colour of the website to blue
 */
 body {
-  background-color:black;
+	background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+	background-size: 400% 400%;
+	animation: gradient 15s ease infinite;
 }
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
 /**
  * This bit of code is how I was able to hide some of the raw code.
  */
@@ -64,7 +79,7 @@ body {
 	background: blue;
 }
 /**
- * without this all of the text inside the tabs aren't visible.
+ * Without this, all of the text inside the tabs aren't visible.
  */
 .tabs input[type="radio"]:checked + label + .tab {
 	display: block;
