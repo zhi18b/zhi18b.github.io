@@ -1,10 +1,84 @@
 <!-- <!-- This is the first category of phones, it is the budget phones category. -->
-<head>
-  <link rel="stylesheet" href="index.css">
-</head>
+
+
+
 <div class="tabs">
   <input type="radio" name="tabs" id="tabone" checked="checked">
   <label for="tabone">Budget</label>
+  
+  <style>
+    /**
+ * Tabs
+ */
+/** Without this my code would look very bare and not very nice.
+ */
+.tabs {
+	display: flex;
+	flex-wrap: wrap; // make sure it wraps
+}
+/**
+ * This is important to the look of the tabs, and part of it is part of the background of the tabs.
+ */
+.tabs label {
+	order: 1; // Put the labels first
+	display: block;
+	padding: 1rem 2rem;
+	margin-right: 0.2rem;
+	cursor: pointer;
+  background: red;
+  font-weight: bold;
+  transition: background ease 0.2s;
+}
+/**
+ * This changes the colour of the website to blue
+*/
+body {
+  background-color:black;
+}
+/**
+ * This bit of code is how I was able to hide some of the raw code.
+ */
+.tabs input[type="radio"] {
+	display: none;
+}
+/**
+ * This makes the tab which you are currently more obvious and less difficult to guess what tab you are on.
+ */
+.tabs input[type="radio"]:checked + label {
+	background: blue;
+}
+/**
+ * without this all of the text inside the tabs aren't visible.
+ */
+.tabs input[type="radio"]:checked + label + .tab {
+	display: block;
+}
+/**
+ * Without this, the code has no structure at all, and all of the tab's context is exposed and there wouldn't be any point without this code.
+ */
+.tabs .tab {
+  order: 99; // Put the tabs last
+  flex-grow: 1;
+	width: 100%;
+	display: none;
+  padding: 1rem;
+  background:white;
+}
+/**
+ * This helps the sizing of the tabs and also the order of them.
+ */
+@media (max-width: 45em) {
+  .tabs .tab,
+  .tabs label {
+    order: initial;
+  }
+  .tabs label {
+    width: 100%;
+    margin-right: 0;
+    margin-top: 0.2rem;
+  }
+}
+  </style>
   <div class="tab">
     <h1>Best budget phones</h1>
     <p>
