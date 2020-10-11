@@ -1,21 +1,174 @@
-Budget
-Best budget phones
-Apple iPhone SE (2020) The best cheap phone for most people.
+<!-- <!-- This is the first category of phones, it is the budget phones category. -->
 
-OnePlus Nord. One of the best mid-range phones of 2020.
 
-Samsung Galaxy S10e. The best premium cheap phone
 
-Moto G8 Power.
+<div class="tabs">
+  <input type="radio" name="tabs" id="tabone" checked="checked">
+  <label for="tabone">Budget</label>
+  <div class="tab">
+    <h1>Best budget phones</h1>
+    <p>
+      Apple iPhone SE (2020) The best cheap phone for most people.</p>
+    <p>
+      OnePlus Nord. One of the best mid-range phones of 2020.</p>
+ <p>   
+Samsung Galaxy S10e. The best premium cheap phone </p>
+    <p>
+      Moto G8 Power.</p>
+    <p>
+      Google Pixel 4a is the best budget phone with one of the best cameras on the market.</p>
+    <p>
+      TCL 10 5G.</p>
+<p>
+  Samsung Galaxy Note 10 Lite. </p>
+  </div>
+  <style>
+    /**
+ * Tabs
+ */
+/** Without this, my code would look very bare and not very nice.
+ */
+.tabs {
+	display: flex;
+	flex-wrap: wrap; // make sure it wraps
+}
+/**
+ * This is important to the look of the tabs, and part of it is part of the background of the tabs.
+ */
+.tabs label {
+	order: 1; // Put the labels first
+	display: block;
+	padding: 1rem 2rem;
+	margin-right: 0.2rem;
+	cursor: pointer;
+  background: red;
+  font-weight: bold;
+  transition: background ease 0.2s;
+}
+/**
+ * This changes the colour of the website to blue
+*/
+body {
+	background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+	background-size: 400% 400%;
+	animation: gradient 15s ease infinite;
+}
 
-Google Pixel 4a is the best budget phone with one of the best cameras on the market.
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
 
-TCL 10 5G.
-
-Samsung Galaxy Note 10 Lite.
-
-Flagship
-Camera
-Screen
-Big
-Battery life
+/**
+ * This bit of code is how I was able to hide some of the raw code.
+ */
+.tabs input[type="radio"] {
+	display: none;
+}
+/**
+ * This makes the tab which you are currently more obvious and less difficult to guess what tab you are on.
+ */
+.tabs input[type="radio"]:checked + label {
+	background: blue;
+}
+/**
+ * Without this, all of the text inside the tabs aren't visible.
+ */
+.tabs input[type="radio"]:checked + label + .tab {
+	display: block;
+}
+/**
+ * Without this, the code has no structure at all, and all of the tab's context is exposed and there wouldn't be any point without this code.
+ */
+.tabs .tab {
+  order: 99; // Put the tabs last
+  flex-grow: 1;
+	width: 100%;
+	display: none;
+  padding: 1rem;
+  background:white;
+}
+/**
+ * This helps the sizing of the tabs and also the order of them.
+ */
+@media (max-width: 45em) {
+  .tabs .tab,
+  .tabs label {
+    order: initial;
+  }
+  .tabs label {
+    width: 100%;
+    margin-right: 0;
+    margin-top: 0.2rem;
+  }
+}
+  </style>
+  <div class="tab">
+    <h1>Best budget phones</h1>
+    <p>
+      Apple iPhone SE (2020) The best cheap phone for most people.</p>
+    <p>
+      OnePlus Nord. One of the best mid-range phones of 2020.</p>
+ <p>   
+Samsung Galaxy S10e. The best premium cheap phone </p>
+    <p>
+      Moto G8 Power.</p>
+    <p>
+      Google Pixel 4a is the best budget phone with one of the best cameras on the market.</p>
+    <p>
+      TCL 10 5G.</p>
+<p>
+  Samsung Galaxy Note 10 Lite. </p>
+  </div>
+  <!-- This is the second catogory and it is the flagship category. -->
+  <input type="radio" name="tabs" id="tabtwo">
+  <label for="tabtwo">Flagship</label>
+  <div class="tab">
+    <h1>The best flagships</h1>
+    <p>
+      The highest of high-end phones are in this category. The latest Galaxy and iPhone are the default choices at this level, with OnePlus climbing to almost be accepted at that tier. All of these have high-quality OLED displays, battery life to spare, and no less than three cameras on their backs that deliver excellent output.</p>
+  </div>
+  <!-- This is the third category, the category is camera -->
+  <input type="radio" name="tabs" id="tabthree">
+  <label for="tabthree">Camera</label>
+  <div class="tab">
+    <h1>The best cameras</h1>
+    <p>The best camra on a smartphone as of now is the Huawei P40 Pro.</p>
+  </div>
+   <!-- This is the fourth category of phones, the screen.  -->
+   <input type="radio" name="tabs" id="tabfour">
+  <label for="tabfour">Screen</label>
+  <div class="tab">
+    <h1>The best screens on a phone.</h1> 
+    <p>The best screen on a phone is the OnePlus 8 Pro</p>
+</div>
+   <!-- This is the fifth category of phones, the big category.  -->
+ <input type="radio" name="tabs" id="tabfive">
+  <label for="tabfive">Big</label>
+  <div class="tab">
+    <h1>The best big phones</h1>
+    <p>The best big phone is the Samsung Galaxy Note 20 Ultra. </p>
+    <p> iPhone 11 Pro Max. The best big iPhone</p>
+    <p>OnePlus Nord is the best big phone for the price.</p>
+    <p> OnePlus 8 Pro is the best value among big flagship phones.</p>
+    <p>Moto G Power is the best longest-lasting big phone.</p>
+    <p> Google Pixel 4 XL is the best camra on a big phone
+</div>
+   <input type="radio" name="tabs" id="tabsix">
+  <label for="tabsix">Battery life</label>
+  <div class="tab">
+    <h1>The best battery life on a phone</h1>
+    <p>The iPhone 11 Pro max </p>
+    <p>The Galaxy S20 and Galaxy S20+</p>
+    <p>The Xiaomi Mi 10 Pro</p>
+    <p>The LG V60 ThinQ 5G</p>
+    <p>The Galaxy Note 10+</p>
+    <p>The Huawei P30 Pro</p>
+  </div>
