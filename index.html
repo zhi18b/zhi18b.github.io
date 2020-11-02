@@ -32,6 +32,7 @@ Samsung Galaxy S10e. The best premium cheap phone </p>
   Samsung Galaxy Note 10 Lite. </p>
   </div>
   <style>
+    
     /**
  * Tabs
  */
@@ -52,15 +53,30 @@ Samsung Galaxy S10e. The best premium cheap phone </p>
 	cursor: pointer;
   background: gold;
   font-weight: bold;
-  transition: background ease 0.2s;
+  transition: background ease 0s;
+}
+  /**
+ * this makes the tabs centred and puts them down a bit.
+     */
+    body {
+  background: #eee;
+  min-height: 100vh;
+	box-sizing: border-box;
+	padding-top: 10vh;
+  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
+  font-weight: 300;
+  line-height: 1.5;
+  max-width: 60rem;
+  margin: 0 auto;
+  font-size: 112%;
 }
 /**
- * This changes the colour of the website to blue
+ * This changes the colour of the website to 
 */
 body {
 	background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
 	background-size: 400% 400%;
-	animation: gradient 15s ease infinite;
+	animation: gradient 4s ease infinite;
 }
 
 @keyframes gradient {
@@ -117,6 +133,11 @@ body {
     margin-right: 0;
     margin-top: 0.2rem;
   }
+}
+    .title {
+  position: absolute;
+  top: -5%;
+  left: 40%;
 }
   </style>
   <div class="tab">
@@ -183,4 +204,7 @@ Samsung Galaxy S10e. The best premium cheap phone </p>
     <p>The LG V60 ThinQ 5G</p>
     <p>The Galaxy Note 10+</p>
     <p>The Huawei P30 Pro</p>
+  </div>
+<div class=title>
+  <h1>Best Phones</h1>
   </div>
