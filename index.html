@@ -15,12 +15,12 @@ p {
   <label for="tabone">Budget</label>
   <div class="tab">
     <h1>Best budget phones</h1>
-    
+   
     <p>
       Apple iPhone SE (2020) The best cheap phone for most people.</p>
     <p>
       OnePlus Nord. One of the best mid-range phones of 2020.</p>
- <p>   
+ <p>  
 Samsung Galaxy S10e. The best premium cheap phone </p>
     <p>
       Moto G8 Power.</p>
@@ -30,27 +30,28 @@ Samsung Galaxy S10e. The best premium cheap phone </p>
       TCL 10 5G.</p>
 <p>
   Samsung Galaxy Note 10 Lite. </p>
+    
   </div>
   <style>
-    
+   
     /**
  * Tabs
  */
 /** Without this, my code would look very bare and not very nice.
  */
 .tabs {
-	display: flex;
-	flex-wrap: wrap; // make sure it wraps
+display: flex;
+flex-wrap: wrap; // make sure it wraps
 }
 /**
  * This is important to the look of the tabs, and part of it is part of the background of the tabs.
  */
 .tabs label {
-	order: 1; // Put the labels first
-	display: block;
-	padding: 1rem 2rem;
-	margin-right: 0.2rem;
-	cursor: pointer;
+order: 1; // Put the labels first
+display: block;
+padding: 1rem 2rem;
+margin-right: 0.2rem;
+cursor: pointer;
   background: gold;
   font-weight: bold;
   transition: background ease 0s;
@@ -61,9 +62,9 @@ Samsung Galaxy S10e. The best premium cheap phone </p>
     body {
   background: #eee;
   min-height: 100vh;
-	box-sizing: border-box;
-	padding-top: 10vh;
-  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
+box-sizing: border-box;
+padding-top: 10vh;
+  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
   font-weight: 300;
   line-height: 1.5;
   max-width: 60rem;
@@ -71,43 +72,43 @@ Samsung Galaxy S10e. The best premium cheap phone </p>
   font-size: 112%;
 }
 /**
- * This changes the colour of the website to 
+ * This changes the colour of the website to
 */
 body {
-	background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
-	background-size: 400% 400%;
-	animation: gradient 4s ease infinite;
+background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+background-size: 400% 400%;
+animation: gradient 4s ease infinite;
 }
 
 @keyframes gradient {
-	0% {
-		background-position: 0% 50%;
-	}
-	50% {
-		background-position: 100% 50%;
-	}
-	100% {
-		background-position: 0% 50%;
-	}
+0% {
+background-position: 0% 50%;
+}
+50% {
+background-position: 100% 50%;
+}
+100% {
+background-position: 0% 50%;
+}
 }
 
 /**
  * This bit of code is how I was able to hide some of the raw code.
  */
 .tabs input[type="radio"] {
-	display: none;
+display: none;
 }
 /**
  * This makes the tab which you are currently more obvious and less difficult to guess what tab you are on.
  */
 .tabs input[type="radio"]:checked + label {
-	background: white;
+background: white;
 }
 /**
  * Without this, all of the text inside the tabs aren't visible.
  */
 .tabs input[type="radio"]:checked + label + .tab {
-	display: block;
+display: block;
 }
 /**
  * Without this, the code has no structure at all, and all of the tab's context is exposed and there wouldn't be any point without this code.
@@ -115,8 +116,8 @@ body {
 .tabs .tab {
   order: 99; // Put the tabs last
   flex-grow: 1;
-	width: 100%;
-	display: none;
+width: 100%;
+display: none;
   padding: 1rem;
   background:white;
 }
@@ -146,7 +147,7 @@ body {
       Apple iPhone SE (2020) The best cheap phone for most people.</p>
     <p>
       OnePlus Nord. One of the best mid-range phones of 2020.</p>
- <p>   
+ <p>  
 Samsung Galaxy S10e. The best premium cheap phone </p>
     <p>
       Moto G8 Power.</p>
@@ -165,6 +166,8 @@ Samsung Galaxy S10e. The best premium cheap phone </p>
     <p>
       The highest of high-end phones are in this category. The latest Galaxy and iPhone are the default choices at this level, with OnePlus climbing to almost be accepted at that tier. All of these have high-quality OLED displays, battery life to spare, and no less than three cameras on their backs that deliver excellent output.</p>
     <p>more coming soon!</p>
+    <img alt="OnePlus 8T review | TechRadar" class="n3VNCb" src="data:image/jpeg;base64,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" data-noaft="1" jsname="HiaYvf" jsaction="load:XAeZkd;" style="width: 299px; height: 168px; margin: 21.45px 0px;">
+ 
   </div>
   <!-- This is the third category, the category is camera -->
   <input type="radio" name="tabs" id="tabthree">
@@ -178,7 +181,7 @@ Samsung Galaxy S10e. The best premium cheap phone </p>
    <input type="radio" name="tabs" id="tabfour">
   <label for="tabfour">Screen</label>
   <div class="tab">
-    <h1>The best screens on a phone.</h1> 
+    <h1>The best screens on a phone.</h1>
     <p>The best screen on a phone is the OnePlus 8 Pro</p>
     <p>more coming soon!</p>
 </div>
